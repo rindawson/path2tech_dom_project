@@ -71,7 +71,10 @@ input[type="text"] {
     text-align: justify;
     margin: 0;
     padding: 10px;
+}
 
+.book-item > p {
+    border: 1px solid black;
 }
 
 .red-button {

@@ -3,19 +3,16 @@ document.getElementById('add-book-btn').addEventListener('click', function() {
     const author = document.getElementById('author').value;
     const publisher = document.getElementById('publisher').value;
 
-
     if (!title || !author || !publisher) {
         alert('Please fill in all fields!');
         return;
     }
-
 
     const bookData = {
         title: title,
         author: author,
         publisher: publisher
     };
-
 
     // Post the new book data to the API
     fetch('https://bookstore-api-six.vercel.app/api/books', {
@@ -31,7 +28,6 @@ document.getElementById('add-book-btn').addEventListener('click', function() {
        
         const bookId = data.id; //
 
-
         // Create a new book entry with a Delete button
         const booksList = document.getElementById('books-list');
         const newBook = document.createElement('div');
@@ -46,14 +42,10 @@ document.getElementById('add-book-btn').addEventListener('click', function() {
         // Append the new book entry to the list
         booksList.appendChild(newBook);
 
-
         // Clear input fields after adding the book
         document.getElementById('title').value = '';
         document.getElementById('author').value = '';
         document.getElementById('publisher').value = '';
-
-
-
 
         newBook.querySelector('.delete-btn').addEventListener('click', function() {
             // Delete from the API using the book ID
