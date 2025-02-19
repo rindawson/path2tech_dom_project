@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom Project</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dom Project</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <h1>Welcome to the Book Store!</h1>
+  <h2>Add a book to the store</h2>
+  <p>Book Title</p>
+  <input type="text" id="title" placeholder="Dracula">
+  <p>Book Author</p>
+  <input type="text" id="author" placeholder="Franz Kafka">
+  <p>Book Publisher</p>
+  <input type="text" id="publisher" placeholder="McGraw-Hill Education">
+  <button class="green-button" id="add-book-btn">Add Book</button>
+  <h2>Books in Stock</h2>
+  <div class="books-info" id="books-list">
+        <div class="header-row">
+            <p><strong>Title</strong></p>
+            <p><strong>Author</strong></p>
+            <p><strong>Publisher</strong></p>
+        </div>
+  </div>
+
+  <!-- <table>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Publisher</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>  -->
+
+
+  <script src="index.js"></script>
 </body>
 </html>
