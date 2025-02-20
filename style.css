@@ -1,22 +1,22 @@
 body {
     font-family: 'Arial', sans-serif;  
-    font-size: 16px;  
-    color: #333;  
+    font-size: 1.2rem;  
+    color: #000000;  
 }
 
 .green-button {
-    background-color: green;
+    background-color: rgb(0, 133, 0);
     color: white;
     padding: 10px;
     border: none;
     width: 100%;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
 .green-button:hover {
-    background-color: darkgreen;
+    background-color: rgb(0, 157, 0);
 }
 
 input[type="text"] {
@@ -26,15 +26,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 16px;
-}
-
-/* Style for the books info container */
-.books-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    font-size: 1rem;
 }
 
 /* Header Row (Title, Author, Publisher) with gray background */
@@ -42,16 +34,19 @@ input[type="text"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #7c7c7c;
-    padding: 15px;
-    border-radius: 8px;
+    background-color: #dddddd;
+    font-size: 1.4rem;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+
 }
 
 .books-info .header-row p {
     flex: 1;
     text-align: center;
-    margin: 0;
-    padding: 10px;
+    margin: 5px;
+    padding: 3px;
 }
 
 /* Style for each book entry */
@@ -59,26 +54,27 @@ input[type="text"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px; 
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 1px; 
     position: relative;
 }
 
-/* Each column inside a book item (Title, Author, Publisher) */
+/* Each row inside a book item (Title, Author, Publisher) */
 .books-info .book-item p, table {
     flex: 1;
-    text-align: justify;
+    text-align: center;
     margin: 0;
-    padding: 10px;
+    padding-top: 0;
+    padding: 10px;  
 }
 
 .book-item > p {
-    border: 1px solid black;
+    border: 1px solid #dddddd;
 }
 
 .red-button {
-   background-color: red;
+   background-color: rgb(214, 0, 0);
    color: white;
    border: none;
    width: 6%;
@@ -91,5 +87,5 @@ input[type="text"] {
 }
 
 .red-button:hover {
-   background-color: darkred;
+   background-color: red;
 }
